@@ -1,0 +1,4 @@
+<map id="OPL" name="OPL">
+<area shape="rect" id="node2" href="$classVotingType.html" title="The generic class of Voting System. " alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node3" href="$classReport.html" title="The Report mainly handles outputs to the display. It prints out the winners recieved from the OPL/CPL..." alt="" coords="19,5,80,32"/>
+</map>

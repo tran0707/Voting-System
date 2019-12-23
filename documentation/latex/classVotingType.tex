@@ -1,0 +1,167 @@
+\hypertarget{classVotingType}{}\section{Voting\+Type Class Reference}
+\label{classVotingType}\index{Voting\+Type@{Voting\+Type}}
+
+
+The generic class of Voting System.  
+
+
+
+
+{\ttfamily \#include $<$voting\+\_\+type.\+h$>$}
+
+
+
+Inheritance diagram for Voting\+Type\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classVotingType__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Voting\+Type\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classVotingType__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVotingType_a2a7f944632e0c06be1a6508cfe30c4ff}\label{classVotingType_a2a7f944632e0c06be1a6508cfe30c4ff}} 
+\hyperlink{classVotingType_a2a7f944632e0c06be1a6508cfe30c4ff}{Voting\+Type} ()
+\begin{DoxyCompactList}\small\item\em default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingType_a737646dda28b6773ea6da1bb8c46fed5}\label{classVotingType_a737646dda28b6773ea6da1bb8c46fed5}} 
+virtual \hyperlink{classVotingType_a737646dda28b6773ea6da1bb8c46fed5}{$\sim$\+Voting\+Type} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classVotingType}{Voting\+Type}\textquotesingle{}s destructor. {\ttfamily delete} all objects created. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classVotingType_aea409923e712452a9efd8be643f30f01}{Read\+File} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} std\+::string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Read the file info into some corresponding object. Readfile will be different depend on \hyperlink{classCPL}{C\+PL} or \hyperlink{classOPL}{O\+PL}. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classVotingType_a60437fc2b77f6142bd055d241600ba77}{Random\+Select\+Winner} (int num)
+\begin{DoxyCompactList}\small\item\em Audit the ballots infomation after reading to identify winners. Audit will be different depend on \hyperlink{classCPL}{C\+PL} or \hyperlink{classOPL}{O\+PL}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classVotingType_afd3cf8ddedcf5d5aae86b86eb8d3bdd0}{Split\+By\+Comma} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Split a string with delimiter is comma \char`\"{},\char`\"{} (e.\+g \char`\"{}\+Mike, D, 11\char`\"{} =$>$ \mbox{[}\char`\"{}\+Mike\char`\"{}, \char`\"{}\+D\char`\"{}, \char`\"{}11\char`\"{}\mbox{]}) \end{DoxyCompactList}\item 
+void \hyperlink{classVotingType_a38b581488ff63dde73225360b56161dc}{Distribute\+Seats\+To\+Party} ()
+\begin{DoxyCompactList}\small\item\em A helper function that is called by Audit(). It distribute seats to parties according to the votes each party gets. It uses the Largest Remainder method to allocate seats for the second distribution after first has been done, when there are still seats remaining. Acts as a wrapper to clean up Audit() and make it more organized. \end{DoxyCompactList}\item 
+\hyperlink{classParty}{Party} \hyperlink{classVotingType_a7752ec81cc1d302587fa1cba66bd12e4}{Distribute\+Seat\+To\+Candidate} (\hyperlink{classParty}{Party} p)
+\begin{DoxyCompactList}\small\item\em This function will check all candidates within the input party, then see how many seats are assigned to party, start distribute those seat for candidates within the input party base on candidate priority. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReport}{Report} \hyperlink{classVotingType_ae1e98bd725c232d76dff9ed44eb0743c}{report\+\_\+} \{\hyperlink{classReport}{Report}()\}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVotingType_a0d13288533b82c8dd29acf4e9e8db90e}\label{classVotingType_a0d13288533b82c8dd29acf4e9e8db90e}} 
+std\+::vector$<$ \hyperlink{classParty}{Party} $>$ {\bfseries parties\+\_\+} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The generic class of Voting System. 
+
+This class contain general methods and variables which both \hyperlink{classOPL}{O\+PL} and \hyperlink{classCPL}{C\+PL} use. (e.\+g both \hyperlink{classOPL}{O\+PL} and \hyperlink{classCPL}{C\+PL} use same \hyperlink{classReport}{Report} object, use same \hyperlink{classVotingType_afd3cf8ddedcf5d5aae86b86eb8d3bdd0}{Split\+By\+Comma()} method for reading information from file)
+
+\hyperlink{classOPL}{O\+PL} and \hyperlink{classCPL}{C\+PL} are inherited from \hyperlink{classVotingType}{Voting\+Type} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVotingType_a38b581488ff63dde73225360b56161dc}\label{classVotingType_a38b581488ff63dde73225360b56161dc}} 
+\index{Voting\+Type@{Voting\+Type}!Distribute\+Seats\+To\+Party@{Distribute\+Seats\+To\+Party}}
+\index{Distribute\+Seats\+To\+Party@{Distribute\+Seats\+To\+Party}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{Distribute\+Seats\+To\+Party()}{DistributeSeatsToParty()}}
+{\footnotesize\ttfamily void Voting\+Type\+::\+Distribute\+Seats\+To\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A helper function that is called by Audit(). It distribute seats to parties according to the votes each party gets. It uses the Largest Remainder method to allocate seats for the second distribution after first has been done, when there are still seats remaining. Acts as a wrapper to clean up Audit() and make it more organized. 
+
+make pair vector with first\+: party remain votes Number second\+: position of party in list of Parties because I want to hold order of new party as the original list of party\mbox{\Hypertarget{classVotingType_a7752ec81cc1d302587fa1cba66bd12e4}\label{classVotingType_a7752ec81cc1d302587fa1cba66bd12e4}} 
+\index{Voting\+Type@{Voting\+Type}!Distribute\+Seat\+To\+Candidate@{Distribute\+Seat\+To\+Candidate}}
+\index{Distribute\+Seat\+To\+Candidate@{Distribute\+Seat\+To\+Candidate}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{Distribute\+Seat\+To\+Candidate()}{DistributeSeatToCandidate()}}
+{\footnotesize\ttfamily \hyperlink{classParty}{Party} Voting\+Type\+::\+Distribute\+Seat\+To\+Candidate (\begin{DoxyParamCaption}\item[{\hyperlink{classParty}{Party}}]{p }\end{DoxyParamCaption})}
+
+
+
+This function will check all candidates within the input party, then see how many seats are assigned to party, start distribute those seat for candidates within the input party base on candidate priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p,the} & party we consider distributing Seats\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new list of party contains only candidate who has a seat 
+\end{DoxyReturn}
+S\+I\+M\+I\+L\+A\+R\+LY to \hyperlink{classVotingType_a38b581488ff63dde73225360b56161dc}{Distribute\+Seats\+To\+Party()} make pair vector with first\+: candidate priority value second\+: position of candidate in list of candidates because want to hold order of new candidate as original list of candidates\mbox{\Hypertarget{classVotingType_a60437fc2b77f6142bd055d241600ba77}\label{classVotingType_a60437fc2b77f6142bd055d241600ba77}} 
+\index{Voting\+Type@{Voting\+Type}!Random\+Select\+Winner@{Random\+Select\+Winner}}
+\index{Random\+Select\+Winner@{Random\+Select\+Winner}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{Random\+Select\+Winner()}{RandomSelectWinner()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Voting\+Type\+::\+Random\+Select\+Winner (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Audit the ballots infomation after reading to identify winners. Audit will be different depend on \hyperlink{classCPL}{C\+PL} or \hyperlink{classOPL}{O\+PL}. 
+
+Random an array/vector of unique number begin from 1. The length of array are specify by parameter. (e.\+g Random\+Select\+Winner(4) =$>$ \mbox{[}4,2,3,1\mbox{]} )
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & the length of vector result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of unique integer number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVotingType_aea409923e712452a9efd8be643f30f01}\label{classVotingType_aea409923e712452a9efd8be643f30f01}} 
+\index{Voting\+Type@{Voting\+Type}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{Read\+File()}{ReadFile()}}
+{\footnotesize\ttfamily virtual void Voting\+Type\+::\+Read\+File (\begin{DoxyParamCaption}\item[{\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Read the file info into some corresponding object. Readfile will be different depend on \hyperlink{classCPL}{C\+PL} or \hyperlink{classOPL}{O\+PL}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & the file name is used to read \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVotingType_afd3cf8ddedcf5d5aae86b86eb8d3bdd0}\label{classVotingType_afd3cf8ddedcf5d5aae86b86eb8d3bdd0}} 
+\index{Voting\+Type@{Voting\+Type}!Split\+By\+Comma@{Split\+By\+Comma}}
+\index{Split\+By\+Comma@{Split\+By\+Comma}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{Split\+By\+Comma()}{SplitByComma()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Voting\+Type\+::\+Split\+By\+Comma (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Split a string with delimiter is comma \char`\"{},\char`\"{} (e.\+g \char`\"{}\+Mike, D, 11\char`\"{} =$>$ \mbox{[}\char`\"{}\+Mike\char`\"{}, \char`\"{}\+D\char`\"{}, \char`\"{}11\char`\"{}\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string need to be splited\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of string of the result after spliting 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classVotingType_ae1e98bd725c232d76dff9ed44eb0743c}\label{classVotingType_ae1e98bd725c232d76dff9ed44eb0743c}} 
+\index{Voting\+Type@{Voting\+Type}!report\+\_\+@{report\+\_\+}}
+\index{report\+\_\+@{report\+\_\+}!Voting\+Type@{Voting\+Type}}
+\subsubsection{\texorpdfstring{report\+\_\+}{report\_}}
+{\footnotesize\ttfamily \hyperlink{classReport}{Report} Voting\+Type\+::report\+\_\+ \{\hyperlink{classReport}{Report}()\}}
+
+P\+U\+B\+L\+IC variable, holding all information of the report after auditing process 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/voting\+\_\+type.\+h\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/voting\+\_\+type.\+cc\end{DoxyCompactItemize}

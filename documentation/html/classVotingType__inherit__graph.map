@@ -1,0 +1,4 @@
+<map id="VotingType" name="VotingType">
+<area shape="rect" id="node2" href="$classCPL.html" title="Closed Party List voting. Inherits VotingType. This voting method votes only to parties. So, Candidate objects will not recieve any votes. Party will recieve the votes instead. This is informed to the Report class for Displaying results. " alt="" coords="5,80,53,107"/>
+<area shape="rect" id="node3" href="$classOPL.html" title="Open Party List voting. Inherits VotingSystem. This voting method votes only to Candidates. In turn, Candidates will hold vote individual vote count. Also, parties will also hold a sum vote count by their own candidates. This is done to calculate distribution of seats. The information is then sent to the Report class. " alt="" coords="77,80,125,107"/>
+</map>

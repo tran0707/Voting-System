@@ -1,0 +1,350 @@
+\hypertarget{classReport}{}\section{Report Class Reference}
+\label{classReport}\index{Report@{Report}}
+
+
+The \hyperlink{classReport}{Report} mainly handles outputs to the display. It prints out the winners recieved from the O\+P\+L/\+C\+PL class. It formats differently depending on which voting method is used.  
+
+
+
+
+{\ttfamily \#include $<$report.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classReport_a239df3fc6679ba0b01e54eda0fd8c34f}\label{classReport_a239df3fc6679ba0b01e54eda0fd8c34f}} 
+\hyperlink{classReport_a239df3fc6679ba0b01e54eda0fd8c34f}{Report} (std\+::vector$<$ \hyperlink{classParty}{Party} $>$ all\+\_\+parties\+\_\+vec, std\+::vector$<$ \hyperlink{classParty}{Party} $>$ winner\+\_\+vec, std\+::string vote\+\_\+type, int total\+\_\+candidates, int nballots, int total\+\_\+seats, std\+::string file)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classReport}{Report} is a Constructor that holds 7 arguments to mainly handles outputs to the display. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classParty}{Party} $>$ \hyperlink{classReport_a079f554f0c4b3c918f9a00bd83bdddd5}{Get\+All\+Candidate\+Party} ()
+\begin{DoxyCompactList}\small\item\em Get the All \hyperlink{classCandidate}{Candidate} \hyperlink{classParty}{Party} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classParty}{Party} $>$ \hyperlink{classReport_a615da7011e9370130181f8d24fa001d6}{Get\+Winner\+Party} ()
+\begin{DoxyCompactList}\small\item\em Get the Winner \hyperlink{classParty}{Party} object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classReport_aaa2157ab3c123a4b9aa4e02f327cba08}{Get\+Voting\+Type} ()
+\begin{DoxyCompactList}\small\item\em Get the Voting Type object. \end{DoxyCompactList}\item 
+int \hyperlink{classReport_a67565c88d75816e4c427f0a45a8ba288}{Get\+Num\+Total\+Candidates} ()
+\begin{DoxyCompactList}\small\item\em Get the Num Total Candidates object. \end{DoxyCompactList}\item 
+int \hyperlink{classReport_a33195efe7c13185cdb887eb4e51176c8}{Get\+Num\+Ballots} ()
+\begin{DoxyCompactList}\small\item\em Get the Num Ballots object. \end{DoxyCompactList}\item 
+int \hyperlink{classReport_a6a368d1b0ab54c2f50e76d56f9837f18}{Get\+Num\+Total\+Seats} ()
+\begin{DoxyCompactList}\small\item\em Get the Num Total Seats object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classReport_a7c133617616e36a1a802260967d0bf96}{Get\+File\+Auditing} ()
+\begin{DoxyCompactList}\small\item\em Get the File Auditing object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a7bb4a631240a73a3cad94c13b15aa10c}{Set\+Vec\+All\+Party} (std\+::vector$<$ \hyperlink{classParty}{Party} $>$ allpat)
+\begin{DoxyCompactList}\small\item\em Set the Vec All \hyperlink{classParty}{Party} object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a6b6f72448fe80a4865eb90630ebff6d8}{Set\+Vec\+Winner\+Party} (std\+::vector$<$ \hyperlink{classParty}{Party} $>$ allpat)
+\begin{DoxyCompactList}\small\item\em Set the Vec Winner \hyperlink{classParty}{Party} object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a803f4835f3ae218eed411f18f48b7590}{Set\+Voting\+Type} (std\+::string vtype)
+\begin{DoxyCompactList}\small\item\em Set the Voting Type object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a5e2b915fae64358202460250b73dbb46}{Set\+Num\+To\+Tal\+Candidates} (int total)
+\begin{DoxyCompactList}\small\item\em Set the Num To Tal Candidates object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a0277f54bdd8aea6634b9e775382d2eb3}{Set\+Num\+Ballots} (int ballot)
+\begin{DoxyCompactList}\small\item\em Set the Num Ballots object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a395c9d4a03d8ac9d6476e8bac95e829a}{Set\+Num\+Total\+Seats} (int seat)
+\begin{DoxyCompactList}\small\item\em Set the Num Total Seats object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_a23043c84ac408fe6ec2bc03d1dc0b700}{Set\+File\+Auditing} (std\+::string file)
+\begin{DoxyCompactList}\small\item\em Set the File Auditing object. \end{DoxyCompactList}\item 
+void \hyperlink{classReport_ac860bc2e03f18c6787c92680cf48e944}{Set\+Audit\+File\+Name} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em audit the filename \end{DoxyCompactList}\item 
+void \hyperlink{classReport_ade621e193bc103820ca18830295934a9}{Set\+Sharing\+File\+Name} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em sharing the file name \end{DoxyCompactList}\item 
+int \hyperlink{classReport_a077538dbc2a1953af4d9cb39502d8749}{Find\+Longest\+C\+P\+L\+Candidate\+Name} (std\+::vector$<$ \hyperlink{classParty}{Party} $>$ pa)
+\begin{DoxyCompactList}\small\item\em Find the longest string when concat all name for each party \hyperlink{classCPL}{C\+PL}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReport_a304b0161066ec48b1ec55fdde420cf81}\label{classReport_a304b0161066ec48b1ec55fdde420cf81}} 
+void \hyperlink{classReport_a304b0161066ec48b1ec55fdde420cf81}{Display} ()
+\begin{DoxyCompactList}\small\item\em Display information of the current voting to terminal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReport_a6d978116196301a30391e836da93b9c0}\label{classReport_a6d978116196301a30391e836da93b9c0}} 
+void \hyperlink{classReport_a6d978116196301a30391e836da93b9c0}{Export\+To\+Audit\+File} ()
+\begin{DoxyCompactList}\small\item\em Export Audit File to the same directotry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReport_ada96baddb6098c28bd05faccaa84894a}\label{classReport_ada96baddb6098c28bd05faccaa84894a}} 
+void \hyperlink{classReport_ada96baddb6098c28bd05faccaa84894a}{Export\+To\+Public\+File} ()
+\begin{DoxyCompactList}\small\item\em Export a public file to share result. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReport_a0cd64b8041ef4eb2afe0b22653072d24}\label{classReport_a0cd64b8041ef4eb2afe0b22653072d24}} 
+void \hyperlink{classReport_a0cd64b8041ef4eb2afe0b22653072d24}{Export\+To\+Short\+Report} ()
+\begin{DoxyCompactList}\small\item\em Export a short report file for the election officials. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classReport_a8777551592f499ba5cee61ecf4781b48}{Candidate\+\_\+comparator} (\hyperlink{classCandidate}{Candidate} \&c1, \hyperlink{classCandidate}{Candidate} \&c2)
+\begin{DoxyCompactList}\small\item\em Use to find max length of \hyperlink{classParty}{Party} name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classReport}{Report} mainly handles outputs to the display. It prints out the winners recieved from the O\+P\+L/\+C\+PL class. It formats differently depending on which voting method is used. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classReport_a8777551592f499ba5cee61ecf4781b48}\label{classReport_a8777551592f499ba5cee61ecf4781b48}} 
+\index{Report@{Report}!Candidate\+\_\+comparator@{Candidate\+\_\+comparator}}
+\index{Candidate\+\_\+comparator@{Candidate\+\_\+comparator}!Report@{Report}}
+\subsubsection{\texorpdfstring{Candidate\+\_\+comparator()}{Candidate\_comparator()}}
+{\footnotesize\ttfamily bool Report\+::\+Candidate\+\_\+comparator (\begin{DoxyParamCaption}\item[{\hyperlink{classCandidate}{Candidate} \&}]{c1,  }\item[{\hyperlink{classCandidate}{Candidate} \&}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Use to find max length of \hyperlink{classParty}{Party} name. 
+
+A function that use to find max length of \hyperlink{classParty}{Party} name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & \\
+\hline
+{\em c2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a077538dbc2a1953af4d9cb39502d8749}\label{classReport_a077538dbc2a1953af4d9cb39502d8749}} 
+\index{Report@{Report}!Find\+Longest\+C\+P\+L\+Candidate\+Name@{Find\+Longest\+C\+P\+L\+Candidate\+Name}}
+\index{Find\+Longest\+C\+P\+L\+Candidate\+Name@{Find\+Longest\+C\+P\+L\+Candidate\+Name}!Report@{Report}}
+\subsubsection{\texorpdfstring{Find\+Longest\+C\+P\+L\+Candidate\+Name()}{FindLongestCPLCandidateName()}}
+{\footnotesize\ttfamily int Report\+::\+Find\+Longest\+C\+P\+L\+Candidate\+Name (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classParty}{Party} $>$}]{pa }\end{DoxyParamCaption})}
+
+
+
+Find the longest string when concat all name for each party \hyperlink{classCPL}{C\+PL}. 
+
+Function to find the longest name of \hyperlink{classCandidate}{Candidate} in a \hyperlink{classParty}{Party} Vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pa} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a079f554f0c4b3c918f9a00bd83bdddd5}\label{classReport_a079f554f0c4b3c918f9a00bd83bdddd5}} 
+\index{Report@{Report}!Get\+All\+Candidate\+Party@{Get\+All\+Candidate\+Party}}
+\index{Get\+All\+Candidate\+Party@{Get\+All\+Candidate\+Party}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+All\+Candidate\+Party()}{GetAllCandidateParty()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classParty}{Party}$>$ Report\+::\+Get\+All\+Candidate\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the All \hyperlink{classCandidate}{Candidate} \hyperlink{classParty}{Party} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector $<$\+Party$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a7c133617616e36a1a802260967d0bf96}\label{classReport_a7c133617616e36a1a802260967d0bf96}} 
+\index{Report@{Report}!Get\+File\+Auditing@{Get\+File\+Auditing}}
+\index{Get\+File\+Auditing@{Get\+File\+Auditing}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+File\+Auditing()}{GetFileAuditing()}}
+{\footnotesize\ttfamily std\+::string Report\+::\+Get\+File\+Auditing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the File Auditing object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a33195efe7c13185cdb887eb4e51176c8}\label{classReport_a33195efe7c13185cdb887eb4e51176c8}} 
+\index{Report@{Report}!Get\+Num\+Ballots@{Get\+Num\+Ballots}}
+\index{Get\+Num\+Ballots@{Get\+Num\+Ballots}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+Num\+Ballots()}{GetNumBallots()}}
+{\footnotesize\ttfamily int Report\+::\+Get\+Num\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Num Ballots object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a67565c88d75816e4c427f0a45a8ba288}\label{classReport_a67565c88d75816e4c427f0a45a8ba288}} 
+\index{Report@{Report}!Get\+Num\+Total\+Candidates@{Get\+Num\+Total\+Candidates}}
+\index{Get\+Num\+Total\+Candidates@{Get\+Num\+Total\+Candidates}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+Num\+Total\+Candidates()}{GetNumTotalCandidates()}}
+{\footnotesize\ttfamily int Report\+::\+Get\+Num\+Total\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Num Total Candidates object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a6a368d1b0ab54c2f50e76d56f9837f18}\label{classReport_a6a368d1b0ab54c2f50e76d56f9837f18}} 
+\index{Report@{Report}!Get\+Num\+Total\+Seats@{Get\+Num\+Total\+Seats}}
+\index{Get\+Num\+Total\+Seats@{Get\+Num\+Total\+Seats}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+Num\+Total\+Seats()}{GetNumTotalSeats()}}
+{\footnotesize\ttfamily int Report\+::\+Get\+Num\+Total\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Num Total Seats object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_aaa2157ab3c123a4b9aa4e02f327cba08}\label{classReport_aaa2157ab3c123a4b9aa4e02f327cba08}} 
+\index{Report@{Report}!Get\+Voting\+Type@{Get\+Voting\+Type}}
+\index{Get\+Voting\+Type@{Get\+Voting\+Type}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+Voting\+Type()}{GetVotingType()}}
+{\footnotesize\ttfamily std\+::string Report\+::\+Get\+Voting\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Voting Type object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_a615da7011e9370130181f8d24fa001d6}\label{classReport_a615da7011e9370130181f8d24fa001d6}} 
+\index{Report@{Report}!Get\+Winner\+Party@{Get\+Winner\+Party}}
+\index{Get\+Winner\+Party@{Get\+Winner\+Party}!Report@{Report}}
+\subsubsection{\texorpdfstring{Get\+Winner\+Party()}{GetWinnerParty()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classParty}{Party}$>$ Report\+::\+Get\+Winner\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Winner \hyperlink{classParty}{Party} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector $<$\+Party$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReport_ac860bc2e03f18c6787c92680cf48e944}\label{classReport_ac860bc2e03f18c6787c92680cf48e944}} 
+\index{Report@{Report}!Set\+Audit\+File\+Name@{Set\+Audit\+File\+Name}}
+\index{Set\+Audit\+File\+Name@{Set\+Audit\+File\+Name}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Audit\+File\+Name()}{SetAuditFileName()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Audit\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+audit the filename 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a23043c84ac408fe6ec2bc03d1dc0b700}\label{classReport_a23043c84ac408fe6ec2bc03d1dc0b700}} 
+\index{Report@{Report}!Set\+File\+Auditing@{Set\+File\+Auditing}}
+\index{Set\+File\+Auditing@{Set\+File\+Auditing}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+File\+Auditing()}{SetFileAuditing()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+File\+Auditing (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the File Auditing object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a0277f54bdd8aea6634b9e775382d2eb3}\label{classReport_a0277f54bdd8aea6634b9e775382d2eb3}} 
+\index{Report@{Report}!Set\+Num\+Ballots@{Set\+Num\+Ballots}}
+\index{Set\+Num\+Ballots@{Set\+Num\+Ballots}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Num\+Ballots()}{SetNumBallots()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Num\+Ballots (\begin{DoxyParamCaption}\item[{int}]{ballot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Num Ballots object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a5e2b915fae64358202460250b73dbb46}\label{classReport_a5e2b915fae64358202460250b73dbb46}} 
+\index{Report@{Report}!Set\+Num\+To\+Tal\+Candidates@{Set\+Num\+To\+Tal\+Candidates}}
+\index{Set\+Num\+To\+Tal\+Candidates@{Set\+Num\+To\+Tal\+Candidates}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Num\+To\+Tal\+Candidates()}{SetNumToTalCandidates()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Num\+To\+Tal\+Candidates (\begin{DoxyParamCaption}\item[{int}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Num To Tal Candidates object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a395c9d4a03d8ac9d6476e8bac95e829a}\label{classReport_a395c9d4a03d8ac9d6476e8bac95e829a}} 
+\index{Report@{Report}!Set\+Num\+Total\+Seats@{Set\+Num\+Total\+Seats}}
+\index{Set\+Num\+Total\+Seats@{Set\+Num\+Total\+Seats}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Num\+Total\+Seats()}{SetNumTotalSeats()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Num\+Total\+Seats (\begin{DoxyParamCaption}\item[{int}]{seat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Num Total Seats object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seat} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_ade621e193bc103820ca18830295934a9}\label{classReport_ade621e193bc103820ca18830295934a9}} 
+\index{Report@{Report}!Set\+Sharing\+File\+Name@{Set\+Sharing\+File\+Name}}
+\index{Set\+Sharing\+File\+Name@{Set\+Sharing\+File\+Name}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Sharing\+File\+Name()}{SetSharingFileName()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Sharing\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sharing the file name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a7bb4a631240a73a3cad94c13b15aa10c}\label{classReport_a7bb4a631240a73a3cad94c13b15aa10c}} 
+\index{Report@{Report}!Set\+Vec\+All\+Party@{Set\+Vec\+All\+Party}}
+\index{Set\+Vec\+All\+Party@{Set\+Vec\+All\+Party}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Vec\+All\+Party()}{SetVecAllParty()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Vec\+All\+Party (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classParty}{Party} $>$}]{allpat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Vec All \hyperlink{classParty}{Party} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em allpat} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a6b6f72448fe80a4865eb90630ebff6d8}\label{classReport_a6b6f72448fe80a4865eb90630ebff6d8}} 
+\index{Report@{Report}!Set\+Vec\+Winner\+Party@{Set\+Vec\+Winner\+Party}}
+\index{Set\+Vec\+Winner\+Party@{Set\+Vec\+Winner\+Party}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Vec\+Winner\+Party()}{SetVecWinnerParty()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Vec\+Winner\+Party (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classParty}{Party} $>$}]{allpat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Vec Winner \hyperlink{classParty}{Party} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em allpat} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReport_a803f4835f3ae218eed411f18f48b7590}\label{classReport_a803f4835f3ae218eed411f18f48b7590}} 
+\index{Report@{Report}!Set\+Voting\+Type@{Set\+Voting\+Type}}
+\index{Set\+Voting\+Type@{Set\+Voting\+Type}!Report@{Report}}
+\subsubsection{\texorpdfstring{Set\+Voting\+Type()}{SetVotingType()}}
+{\footnotesize\ttfamily void Report\+::\+Set\+Voting\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{vtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Voting Type object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vtype} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{report_8h}{report.\+h}\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{report_8cc}{report.\+cc}\end{DoxyCompactItemize}

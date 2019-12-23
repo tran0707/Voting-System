@@ -1,0 +1,79 @@
+\hypertarget{classOPL}{}\section{O\+PL Class Reference}
+\label{classOPL}\index{O\+PL@{O\+PL}}
+
+
+Open \hyperlink{classParty}{Party} List voting. Inherits \hyperlink{classVotingSystem}{Voting\+System}. This voting method votes only to Candidates. In turn, Candidates will hold vote individual vote count. Also, parties will also hold a sum vote count by their own candidates. This is done to calculate distribution of seats. The information is then sent to the \hyperlink{classReport}{Report} class.  
+
+
+
+
+{\ttfamily \#include $<$opl.\+h$>$}
+
+
+
+Inheritance diagram for O\+PL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOPL__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for O\+PL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classOPL__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOPL_aee8e3e8733a174df302be1ee7b287a68}\label{classOPL_aee8e3e8733a174df302be1ee7b287a68}} 
+\hyperlink{classOPL_aee8e3e8733a174df302be1ee7b287a68}{O\+PL} ()
+\begin{DoxyCompactList}\small\item\em default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOPL_a22c35b5bf51f6b8f8451a48fcc1f88ba}\label{classOPL_a22c35b5bf51f6b8f8451a48fcc1f88ba}} 
+\hyperlink{classOPL_a22c35b5bf51f6b8f8451a48fcc1f88ba}{$\sim$\+O\+PL} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classVotingSystem}{Voting\+System}\textquotesingle{}s destructor. {\ttfamily delete} all objects created. \end{DoxyCompactList}\item 
+void \hyperlink{classOPL_af13e5b6927d0bd0b979727ba30482cff}{Read\+File} (std\+::string file\+\_\+name) override
+\begin{DoxyCompactList}\small\item\em Read the file info into some corresponding object. This Readfile is used for \hyperlink{classOPL}{O\+PL} voting type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOPL_a06aa12563726561d60c91d32c3e0e3a3}\label{classOPL_a06aa12563726561d60c91d32c3e0e3a3}} 
+void \hyperlink{classOPL_a06aa12563726561d60c91d32c3e0e3a3}{Audit} ()
+\begin{DoxyCompactList}\small\item\em After \hyperlink{classOPL_af13e5b6927d0bd0b979727ba30482cff}{Read\+File()}, more information will be processed into different classes and stored. This first calls Populate\+Votes() to input all the vote information into each instance of party. Then, it calls Distribute\+Seats() to determine how many seats each party gets. At the end, it selects the top parties and their elected candidates and send this information to the \hyperlink{classReport}{Report} class. Tiebreaking is also implicitly used in case of tied votes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Open \hyperlink{classParty}{Party} List voting. Inherits \hyperlink{classVotingSystem}{Voting\+System}. This voting method votes only to Candidates. In turn, Candidates will hold vote individual vote count. Also, parties will also hold a sum vote count by their own candidates. This is done to calculate distribution of seats. The information is then sent to the \hyperlink{classReport}{Report} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOPL_af13e5b6927d0bd0b979727ba30482cff}\label{classOPL_af13e5b6927d0bd0b979727ba30482cff}} 
+\index{O\+PL@{O\+PL}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!O\+PL@{O\+PL}}
+\subsubsection{\texorpdfstring{Read\+File()}{ReadFile()}}
+{\footnotesize\ttfamily void O\+P\+L\+::\+Read\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Read the file info into some corresponding object. This Readfile is used for \hyperlink{classOPL}{O\+PL} voting type. 
+
+Steps\+:
+\begin{DoxyItemize}
+\item 1st Line\+: \hyperlink{classOPL}{O\+PL} for open party listing
+\item 2th Line\+: Number of Seats
+\item 3rd Line\+: Number of Ballots
+\item 4th Line\+: Number of Candidates
+\item Following the 4th line are the candidates info. The candidates and their party are in \mbox{[} \mbox{]}.
+\item Then the ballots are listed on per line and commas are used to separate the positions.
+\end{DoxyItemize}
+
+All the information after reading are stored in report\+\_\+ \begin{DoxyVerb}@param file_name the file name is used to read\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{opl_8h}{opl.\+h}\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/opl.\+cc\end{DoxyCompactItemize}

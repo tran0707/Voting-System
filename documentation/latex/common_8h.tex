@@ -1,0 +1,80 @@
+\hypertarget{common_8h}{}\section{/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/common.h File Reference}
+\label{common_8h}\index{/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/common.\+h@{/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/common.\+h}}
+{\ttfamily \#include $<$random$>$}\newline
+Include dependency graph for common.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{common_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{common_8h_a577cd817cb71b655998cad4387cdaeba}\label{common_8h_a577cd817cb71b655998cad4387cdaeba}} 
+\#define {\bfseries N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+IN}(name)~namespace name \{
+\item 
+\mbox{\Hypertarget{common_8h_a12bb24ea980ca8fb1f46b1992bc9c83a}\label{common_8h_a12bb24ea980ca8fb1f46b1992bc9c83a}} 
+\#define {\bfseries N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+ND}(name)~\}
+\item 
+\#define \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{common_8h_ac14593f15572ef118d7bc7381b372b94}{random\+\_\+num} (T min, T max)
+\begin{DoxyCompactList}\small\item\em A template method for random number generation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+2019, Fall Semester, 5801 Student Group 22, All rights reserved. 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common_8h_a2e3484535ee610c8e19e9859563abe48}\label{common_8h_a2e3484535ee610c8e19e9859563abe48}} 
+\index{common.\+h@{common.\+h}!\+\_\+\+\_\+unused@{\+\_\+\+\_\+unused}}
+\index{\+\_\+\+\_\+unused@{\+\_\+\+\_\+unused}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+unused}{\_\_unused}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+unused~\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused))}
+
+This should be placed in front of any variable defined but not used to satisfy the compiler -\/ otherwise a warning is given. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{common_8h_ac14593f15572ef118d7bc7381b372b94}\label{common_8h_ac14593f15572ef118d7bc7381b372b94}} 
+\index{common.\+h@{common.\+h}!random\+\_\+num@{random\+\_\+num}}
+\index{random\+\_\+num@{random\+\_\+num}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{random\+\_\+num()}{random\_num()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T random\+\_\+num (\begin{DoxyParamCaption}\item[{T}]{min,  }\item[{T}]{max }\end{DoxyParamCaption})}
+
+
+
+A template method for random number generation. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the input/return values. Can be any primitive numeric type (e.\+g. {\ttfamily int}). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The (inclusive) minimum of the generated value. \\
+\hline
+{\em max} & The (exclusive) maximum of the generated value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pseudo-\/randomly generated number in the range of \mbox{[}min, max).
+\end{DoxyReturn}
+Reference\+: \href{https://stackoverflow.com/a/19728404}{\tt https\+://stackoverflow.\+com/a/19728404} 

@@ -1,0 +1,290 @@
+\hypertarget{classParty}{}\section{Party Class Reference}
+\label{classParty}\index{Party@{Party}}
+
+
+A \hyperlink{classParty}{Party} mainly holds instances of Candidates. It also contains some variables for seat distribution calculation.  
+
+
+
+
+{\ttfamily \#include $<$party.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParty_aab26b5b8dfb95aed33e16938989dc0a5}{Party} (std\+::string name, std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$ candidates)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classParty}{Party} is a constructor of class \hyperlink{classParty}{Party} for Open \hyperlink{classParty}{Party} List (\hyperlink{classOPL}{O\+PL}) \end{DoxyCompactList}\item 
+\hyperlink{classParty_ab7eb172ab879241b8a3d55a6dfff2417}{Party} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classParty}{Party} is a constructor of class \hyperlink{classParty}{Party} for Closed \hyperlink{classParty}{Party} List (\hyperlink{classCPL}{C\+PL}) \end{DoxyCompactList}\item 
+\hyperlink{classParty_a31d77f763e1dc9549532653a4a0dfde5}{Party} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classParty}{Party} is a default constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classParty_a60969a52220b8358c2b85d7287a565cc}{Set\+Name} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em set the name of each party \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classParty_aa93fa62109fbd645de2aa75f0fce2d42}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get the name of each party \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$ \hyperlink{classParty_a44a8a31088ed290f2cc59d6a42e81c07}{Get\+Candidates} ()
+\begin{DoxyCompactList}\small\item\em get the list of candidates from the \hyperlink{classCandidate}{Candidate} class \end{DoxyCompactList}\item 
+int \hyperlink{classParty_aa466a6724520d9e325c7d3e9e4aaeec1}{Get\+Num\+Seats} ()
+\begin{DoxyCompactList}\small\item\em get the number of seats \end{DoxyCompactList}\item 
+int \hyperlink{classParty_ad9d2f38fc5cb90f37c5e185c57346fde}{Get\+Num\+Votes} ()
+\begin{DoxyCompactList}\small\item\em get the number of votes \end{DoxyCompactList}\item 
+void \hyperlink{classParty_a60b1e5933f9f61cd8b9bd21b2c66f633}{Set\+Num\+Votes} (int num)
+\begin{DoxyCompactList}\small\item\em set the number of votes \end{DoxyCompactList}\item 
+int \hyperlink{classParty_a045386f85422520b6ef1f85cdba74dac}{Get\+Num\+Candidate} ()
+\begin{DoxyCompactList}\small\item\em get the number of candidates \end{DoxyCompactList}\item 
+void \hyperlink{classParty_a0ffe28b5f64b300dbe0d66356d8c6b1c}{Add\+Candidate} (\hyperlink{classCandidate}{Candidate} candidate)
+\begin{DoxyCompactList}\small\item\em add the candidate into the list of candidates \end{DoxyCompactList}\item 
+void \hyperlink{classParty_ae7523a0a047e5a6ffac376331ea11ded}{Set\+Num\+Seats} (int num)
+\begin{DoxyCompactList}\small\item\em set the number of seats \end{DoxyCompactList}\item 
+void \hyperlink{classParty_ad9dff61f9195359c440020ccebb4a5dd}{Add\+Ballot\+Id} (int ballot\+\_\+id)
+\begin{DoxyCompactList}\small\item\em add the ballot identification into the list of ballot \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classParty_a7a97cdb859c34604b1a952df0151b7f3}{Get\+Ballot\+List} ()
+\begin{DoxyCompactList}\small\item\em get the list of ballots \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_ace4d8c5a1fb58af2ece9136278bca5cf}\label{classParty_ace4d8c5a1fb58af2ece9136278bca5cf}} 
+void {\bfseries Set\+Candidates} (std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$ cands)
+\item 
+int \hyperlink{classParty_a7f58024b3b948f2e9779f766a267c8a7}{Get\+Remaining\+Votes} ()
+\begin{DoxyCompactList}\small\item\em get the list of ballots \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_ae0f2702fc682c32fcefae7067efb22a8}\label{classParty_ae0f2702fc682c32fcefae7067efb22a8}} 
+void {\bfseries Set\+Remaining\+Votes} (int num)
+\item 
+\mbox{\Hypertarget{classParty_a16a67b58cf4dd79670a41820e8734a9a}\label{classParty_a16a67b58cf4dd79670a41820e8734a9a}} 
+void {\bfseries Empty\+Candidate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$ \hyperlink{classParty_a4d41ca10218671ecbc17ca75c4010822}{list\+\_\+candidates\+\_\+} \{\}
+\begin{DoxyCompactList}\small\item\em candidate contains a list of candidates \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classParty}{Party} mainly holds instances of Candidates. It also contains some variables for seat distribution calculation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParty_aab26b5b8dfb95aed33e16938989dc0a5}\label{classParty_aab26b5b8dfb95aed33e16938989dc0a5}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\subsubsection{\texorpdfstring{Party()}{Party()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$}]{candidates }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classParty}{Party} is a constructor of class \hyperlink{classParty}{Party} for Open \hyperlink{classParty}{Party} List (\hyperlink{classOPL}{O\+PL}) 
+
+that contains the name of party and the vector of candidates
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ab7eb172ab879241b8a3d55a6dfff2417}\label{classParty_ab7eb172ab879241b8a3d55a6dfff2417}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\subsubsection{\texorpdfstring{Party()}{Party()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classParty}{Party} is a constructor of class \hyperlink{classParty}{Party} for Closed \hyperlink{classParty}{Party} List (\hyperlink{classCPL}{C\+PL}) 
+
+that contains only the name of the party
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a31d77f763e1dc9549532653a4a0dfde5}\label{classParty_a31d77f763e1dc9549532653a4a0dfde5}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\subsubsection{\texorpdfstring{Party()}{Party()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classParty}{Party} is a default constructor. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParty_ad9dff61f9195359c440020ccebb4a5dd}\label{classParty_ad9dff61f9195359c440020ccebb4a5dd}} 
+\index{Party@{Party}!Add\+Ballot\+Id@{Add\+Ballot\+Id}}
+\index{Add\+Ballot\+Id@{Add\+Ballot\+Id}!Party@{Party}}
+\subsubsection{\texorpdfstring{Add\+Ballot\+Id()}{AddBallotId()}}
+{\footnotesize\ttfamily void Party\+::\+Add\+Ballot\+Id (\begin{DoxyParamCaption}\item[{int}]{ballot\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+add the ballot identification into the list of ballot 
+
+identification
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a0ffe28b5f64b300dbe0d66356d8c6b1c}\label{classParty_a0ffe28b5f64b300dbe0d66356d8c6b1c}} 
+\index{Party@{Party}!Add\+Candidate@{Add\+Candidate}}
+\index{Add\+Candidate@{Add\+Candidate}!Party@{Party}}
+\subsubsection{\texorpdfstring{Add\+Candidate()}{AddCandidate()}}
+{\footnotesize\ttfamily void Party\+::\+Add\+Candidate (\begin{DoxyParamCaption}\item[{\hyperlink{classCandidate}{Candidate}}]{candidate }\end{DoxyParamCaption})}
+
+
+
+add the candidate into the list of candidates 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a7a97cdb859c34604b1a952df0151b7f3}\label{classParty_a7a97cdb859c34604b1a952df0151b7f3}} 
+\index{Party@{Party}!Get\+Ballot\+List@{Get\+Ballot\+List}}
+\index{Get\+Ballot\+List@{Get\+Ballot\+List}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Ballot\+List()}{GetBallotList()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Party\+::\+Get\+Ballot\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the list of ballots 
+
+\begin{DoxyReturn}{Returns}
+list\+\_\+ballot\+\_\+id\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a44a8a31088ed290f2cc59d6a42e81c07}\label{classParty_a44a8a31088ed290f2cc59d6a42e81c07}} 
+\index{Party@{Party}!Get\+Candidates@{Get\+Candidates}}
+\index{Get\+Candidates@{Get\+Candidates}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Candidates()}{GetCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classCandidate}{Candidate} $>$ Party\+::\+Get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the list of candidates from the \hyperlink{classCandidate}{Candidate} class 
+
+\begin{DoxyReturn}{Returns}
+list\+\_\+candidates\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_aa93fa62109fbd645de2aa75f0fce2d42}\label{classParty_aa93fa62109fbd645de2aa75f0fce2d42}} 
+\index{Party@{Party}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Party\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the name of each party 
+
+\begin{DoxyReturn}{Returns}
+name\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a045386f85422520b6ef1f85cdba74dac}\label{classParty_a045386f85422520b6ef1f85cdba74dac}} 
+\index{Party@{Party}!Get\+Num\+Candidate@{Get\+Num\+Candidate}}
+\index{Get\+Num\+Candidate@{Get\+Num\+Candidate}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Num\+Candidate()}{GetNumCandidate()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Num\+Candidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the number of candidates 
+
+\begin{DoxyReturn}{Returns}
+num\+\_\+candidates\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_aa466a6724520d9e325c7d3e9e4aaeec1}\label{classParty_aa466a6724520d9e325c7d3e9e4aaeec1}} 
+\index{Party@{Party}!Get\+Num\+Seats@{Get\+Num\+Seats}}
+\index{Get\+Num\+Seats@{Get\+Num\+Seats}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Num\+Seats()}{GetNumSeats()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Num\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the number of seats 
+
+\begin{DoxyReturn}{Returns}
+num\+\_\+seats\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ad9d2f38fc5cb90f37c5e185c57346fde}\label{classParty_ad9d2f38fc5cb90f37c5e185c57346fde}} 
+\index{Party@{Party}!Get\+Num\+Votes@{Get\+Num\+Votes}}
+\index{Get\+Num\+Votes@{Get\+Num\+Votes}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Num\+Votes()}{GetNumVotes()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Num\+Votes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the number of votes 
+
+\begin{DoxyReturn}{Returns}
+num\+\_\+votes\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a7f58024b3b948f2e9779f766a267c8a7}\label{classParty_a7f58024b3b948f2e9779f766a267c8a7}} 
+\index{Party@{Party}!Get\+Remaining\+Votes@{Get\+Remaining\+Votes}}
+\index{Get\+Remaining\+Votes@{Get\+Remaining\+Votes}!Party@{Party}}
+\subsubsection{\texorpdfstring{Get\+Remaining\+Votes()}{GetRemainingVotes()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Remaining\+Votes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the list of ballots 
+
+\begin{DoxyReturn}{Returns}
+list\+\_\+ballot\+\_\+id\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a60969a52220b8358c2b85d7287a565cc}\label{classParty_a60969a52220b8358c2b85d7287a565cc}} 
+\index{Party@{Party}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!Party@{Party}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily std\+::string Party\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+set the name of each party 
+
+\begin{DoxyReturn}{Returns}
+name\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ae7523a0a047e5a6ffac376331ea11ded}\label{classParty_ae7523a0a047e5a6ffac376331ea11ded}} 
+\index{Party@{Party}!Set\+Num\+Seats@{Set\+Num\+Seats}}
+\index{Set\+Num\+Seats@{Set\+Num\+Seats}!Party@{Party}}
+\subsubsection{\texorpdfstring{Set\+Num\+Seats()}{SetNumSeats()}}
+{\footnotesize\ttfamily void Party\+::\+Set\+Num\+Seats (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+set the number of seats 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a60b1e5933f9f61cd8b9bd21b2c66f633}\label{classParty_a60b1e5933f9f61cd8b9bd21b2c66f633}} 
+\index{Party@{Party}!Set\+Num\+Votes@{Set\+Num\+Votes}}
+\index{Set\+Num\+Votes@{Set\+Num\+Votes}!Party@{Party}}
+\subsubsection{\texorpdfstring{Set\+Num\+Votes()}{SetNumVotes()}}
+{\footnotesize\ttfamily void Party\+::\+Set\+Num\+Votes (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+set the number of votes 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classParty_a4d41ca10218671ecbc17ca75c4010822}\label{classParty_a4d41ca10218671ecbc17ca75c4010822}} 
+\index{Party@{Party}!list\+\_\+candidates\+\_\+@{list\+\_\+candidates\+\_\+}}
+\index{list\+\_\+candidates\+\_\+@{list\+\_\+candidates\+\_\+}!Party@{Party}}
+\subsubsection{\texorpdfstring{list\+\_\+candidates\+\_\+}{list\_candidates\_}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classCandidate}{Candidate}$>$ Party\+::list\+\_\+candidates\+\_\+ \{\}}
+
+
+
+candidate contains a list of candidates 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{party_8h}{party.\+h}\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/party.\+cc\end{DoxyCompactItemize}

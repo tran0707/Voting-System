@@ -1,0 +1,103 @@
+\hypertarget{classVotingSystem}{}\section{Voting\+System Class Reference}
+\label{classVotingSystem}\index{Voting\+System@{Voting\+System}}
+
+
+The main controller class for Voting System.  
+
+
+
+
+{\ttfamily \#include $<$voting\+\_\+system.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVotingSystem_ab8f928f5da75818aef2de0a82e97c823}\label{classVotingSystem_ab8f928f5da75818aef2de0a82e97c823}} 
+\hyperlink{classVotingSystem_ab8f928f5da75818aef2de0a82e97c823}{Voting\+System} ()
+\begin{DoxyCompactList}\small\item\em default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingSystem_a6563912c8fd1847d9aeaaf8d33a9b177}\label{classVotingSystem_a6563912c8fd1847d9aeaaf8d33a9b177}} 
+\hyperlink{classVotingSystem_a6563912c8fd1847d9aeaaf8d33a9b177}{$\sim$\+Voting\+System} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classVotingSystem}{Voting\+System}\textquotesingle{}s destructor. {\ttfamily delete} all objects created. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingSystem_a4d3e2adccbfae16eb4d17dd46d682074}\label{classVotingSystem_a4d3e2adccbfae16eb4d17dd46d682074}} 
+void \hyperlink{classVotingSystem_a4d3e2adccbfae16eb4d17dd46d682074}{Run\+Audit\+Process} ()
+\begin{DoxyCompactList}\small\item\em Run every steps of voting system. Readfile -\/$>$ Audit -\/$>$ Display result -\/$>$ Export Audit file -\/$>$ Export Sharing file. \end{DoxyCompactList}\item 
+void \hyperlink{classVotingSystem_a4c6d3ece9023dc618100fa65a536ccf5}{Set\+File\+Name} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set the input file\+\_\+name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingSystem_ad7eef413416223230ed36ee1059b02f2}\label{classVotingSystem_ad7eef413416223230ed36ee1059b02f2}} 
+std\+::string \hyperlink{classVotingSystem_ad7eef413416223230ed36ee1059b02f2}{Get\+File\+Name} ()
+\begin{DoxyCompactList}\small\item\em Getter file\+\_\+name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingSystem_a06144a45a692d5bb5f1849d7cae438c2}\label{classVotingSystem_a06144a45a692d5bb5f1849d7cae438c2}} 
+void \hyperlink{classVotingSystem_a06144a45a692d5bb5f1849d7cae438c2}{Accept\+Command} (Communication com)
+\begin{DoxyCompactList}\small\item\em Recieve a command from user and handle it. \end{DoxyCompactList}\item 
+void \hyperlink{classVotingSystem_a54c0b7c2180d3c158846ecbd61a385ab}{Advance\+Time} (double dt)
+\begin{DoxyCompactList}\small\item\em Advance the simulation by the specified \# of steps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVotingSystem_a59b3f2af814cc5da9f7b9554c06896e9}\label{classVotingSystem_a59b3f2af814cc5da9f7b9554c06896e9}} 
+void \hyperlink{classVotingSystem_a59b3f2af814cc5da9f7b9554c06896e9}{Reset} ()
+\begin{DoxyCompactList}\small\item\em Reset all variables in \hyperlink{classVotingSystem}{Voting\+System}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classVotingSystem_a90e53d556d9dc2117690b34d9dfb7ac4}{open\+\_\+file\+\_\+status\+\_\+} \{ D\+E\+F\+A\+U\+L\+T\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+US \}
+\item 
+\mbox{\Hypertarget{classVotingSystem_afb2b2d8a30e999fdea663437933caa90}\label{classVotingSystem_afb2b2d8a30e999fdea663437933caa90}} 
+std\+::string {\bfseries audit\+\_\+save\+\_\+file\+\_\+status\+\_\+} \{ D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+V\+E\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+US \}
+\item 
+\mbox{\Hypertarget{classVotingSystem_a6965a6fdb6c5650d25fe0d191ba5bed0}\label{classVotingSystem_a6965a6fdb6c5650d25fe0d191ba5bed0}} 
+std\+::string {\bfseries sharing\+\_\+save\+\_\+file\+\_\+status\+\_\+} \{ D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+V\+E\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+US \}
+\item 
+\mbox{\Hypertarget{classVotingSystem_a621d15f32179de0e4a20e7f60fe6c060}\label{classVotingSystem_a621d15f32179de0e4a20e7f60fe6c060}} 
+std\+::string {\bfseries run\+\_\+audit\+\_\+status\+\_\+} \{ D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+U\+D\+I\+T\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+US \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main controller class for Voting System. 
+
+When the main function run, this will call the Voting System \hyperlink{classController}{Controller} Run() method. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVotingSystem_a54c0b7c2180d3c158846ecbd61a385ab}\label{classVotingSystem_a54c0b7c2180d3c158846ecbd61a385ab}} 
+\index{Voting\+System@{Voting\+System}!Advance\+Time@{Advance\+Time}}
+\index{Advance\+Time@{Advance\+Time}!Voting\+System@{Voting\+System}}
+\subsubsection{\texorpdfstring{Advance\+Time()}{AdvanceTime()}}
+{\footnotesize\ttfamily void Voting\+System\+::\+Advance\+Time (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Advance the simulation by the specified \# of steps. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & The \# of steps to increment by. This is practically unused because the arena state is advanced incrementally at a fixed rate.\\
+\hline
+\end{DoxyParams}
+If {\ttfamily dt == 0}, {\ttfamily return} immediately. Otherwise calls \hyperlink{classVotingSystem}{Voting\+System}\+:\+:....() once to update \mbox{\Hypertarget{classVotingSystem_a4c6d3ece9023dc618100fa65a536ccf5}\label{classVotingSystem_a4c6d3ece9023dc618100fa65a536ccf5}} 
+\index{Voting\+System@{Voting\+System}!Set\+File\+Name@{Set\+File\+Name}}
+\index{Set\+File\+Name@{Set\+File\+Name}!Voting\+System@{Voting\+System}}
+\subsubsection{\texorpdfstring{Set\+File\+Name()}{SetFileName()}}
+{\footnotesize\ttfamily void Voting\+System\+::\+Set\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the input file\+\_\+name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classVotingSystem_a90e53d556d9dc2117690b34d9dfb7ac4}\label{classVotingSystem_a90e53d556d9dc2117690b34d9dfb7ac4}} 
+\index{Voting\+System@{Voting\+System}!open\+\_\+file\+\_\+status\+\_\+@{open\+\_\+file\+\_\+status\+\_\+}}
+\index{open\+\_\+file\+\_\+status\+\_\+@{open\+\_\+file\+\_\+status\+\_\+}!Voting\+System@{Voting\+System}}
+\subsubsection{\texorpdfstring{open\+\_\+file\+\_\+status\+\_\+}{open\_file\_status\_}}
+{\footnotesize\ttfamily std\+::string Voting\+System\+::open\+\_\+file\+\_\+status\+\_\+ \{ D\+E\+F\+A\+U\+L\+T\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+US \}}
+
+All public variable which can be extracted from Graphic viewer to display information 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{voting__system_8h}{voting\+\_\+system.\+h}\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{voting__system_8cc}{voting\+\_\+system.\+cc}\end{DoxyCompactItemize}

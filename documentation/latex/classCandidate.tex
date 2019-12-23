@@ -1,0 +1,155 @@
+\hypertarget{classCandidate}{}\section{Candidate Class Reference}
+\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+\hyperlink{classCandidate}{Candidate} is an entity participating in the election. It holds vote information when it\textquotesingle{}s Open \hyperlink{classParty}{Party} List voting.  
+
+
+
+
+{\ttfamily \#include $<$candidate.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCandidate_a8d4f237094b44cadffade76995daa553}{Candidate} (std\+::string name, int order\+\_\+priority\+\_\+party)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCandidate}{Candidate} is constructor of class \hyperlink{classCandidate}{Candidate} for Closed \hyperlink{classParty}{Party} list which takes name of candidate and order\+\_\+priority\+\_\+party. \end{DoxyCompactList}\item 
+\hyperlink{classCandidate_a99c1eda1eeecf4bbd054049449954c90}{Candidate} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCandidate}{Candidate} is constructor of class \hyperlink{classCandidate}{Candidate} for Open \hyperlink{classParty}{Party} list which takes name of candidate. \end{DoxyCompactList}\item 
+\hyperlink{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}{Candidate} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCandidate}{Candidate} is a default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classCandidate_a7007f43ce1b34fa18e382708b65b3505}{Set\+Order\+Priority\+Party} (int order\+\_\+priority\+\_\+party)
+\begin{DoxyCompactList}\small\item\em set the order of priority party for Closed \hyperlink{classParty}{Party} List \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCandidate_ad97f7ac3672bab8b72b7b7755fa10e0e}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get the name of the candidates in each party \end{DoxyCompactList}\item 
+void \hyperlink{classCandidate_a0cfc3de32eb64ec8c6f871120f3e971d}{Set\+Ballot\+Num} (int num)
+\begin{DoxyCompactList}\small\item\em set the number of ballot to count the ballot number \end{DoxyCompactList}\item 
+int \hyperlink{classCandidate_ab7922ab28b022c85b1a2f9743be4714c}{Get\+Ballot\+Num} ()
+\begin{DoxyCompactList}\small\item\em get the ballot number from \hyperlink{classCandidate}{Candidate} class \end{DoxyCompactList}\item 
+int \hyperlink{classCandidate_a26abbe93bfda7c101567b3679994e51a}{Get\+Priority} ()
+\begin{DoxyCompactList}\small\item\em get the priority order for Closed \hyperlink{classParty}{Party} List \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_a23fc1888995f0ce43ff9414a25e93fc7}\label{classCandidate_a23fc1888995f0ce43ff9414a25e93fc7}} 
+std\+::vector$<$ int $>$ {\bfseries list\+\_\+ballot\+\_\+id\+\_\+} = \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classCandidate}{Candidate} is an entity participating in the election. It holds vote information when it\textquotesingle{}s Open \hyperlink{classParty}{Party} List voting. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCandidate_a8d4f237094b44cadffade76995daa553}\label{classCandidate_a8d4f237094b44cadffade76995daa553}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Candidate()}{Candidate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{order\+\_\+priority\+\_\+party }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classCandidate}{Candidate} is constructor of class \hyperlink{classCandidate}{Candidate} for Closed \hyperlink{classParty}{Party} list which takes name of candidate and order\+\_\+priority\+\_\+party. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a99c1eda1eeecf4bbd054049449954c90}\label{classCandidate_a99c1eda1eeecf4bbd054049449954c90}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Candidate()}{Candidate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classCandidate}{Candidate} is constructor of class \hyperlink{classCandidate}{Candidate} for Open \hyperlink{classParty}{Party} list which takes name of candidate. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}\label{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Candidate()}{Candidate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classCandidate}{Candidate} is a default constructor. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandidate_ab7922ab28b022c85b1a2f9743be4714c}\label{classCandidate_ab7922ab28b022c85b1a2f9743be4714c}} 
+\index{Candidate@{Candidate}!Get\+Ballot\+Num@{Get\+Ballot\+Num}}
+\index{Get\+Ballot\+Num@{Get\+Ballot\+Num}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Get\+Ballot\+Num()}{GetBallotNum()}}
+{\footnotesize\ttfamily int Candidate\+::\+Get\+Ballot\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the ballot number from \hyperlink{classCandidate}{Candidate} class 
+
+\begin{DoxyReturn}{Returns}
+counting\+\_\+ballot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_ad97f7ac3672bab8b72b7b7755fa10e0e}\label{classCandidate_ad97f7ac3672bab8b72b7b7755fa10e0e}} 
+\index{Candidate@{Candidate}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the name of the candidates in each party 
+
+\begin{DoxyReturn}{Returns}
+name\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a26abbe93bfda7c101567b3679994e51a}\label{classCandidate_a26abbe93bfda7c101567b3679994e51a}} 
+\index{Candidate@{Candidate}!Get\+Priority@{Get\+Priority}}
+\index{Get\+Priority@{Get\+Priority}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Get\+Priority()}{GetPriority()}}
+{\footnotesize\ttfamily int Candidate\+::\+Get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the priority order for Closed \hyperlink{classParty}{Party} List 
+
+\begin{DoxyReturn}{Returns}
+order\+\_\+priority\+\_\+party\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a0cfc3de32eb64ec8c6f871120f3e971d}\label{classCandidate_a0cfc3de32eb64ec8c6f871120f3e971d}} 
+\index{Candidate@{Candidate}!Set\+Ballot\+Num@{Set\+Ballot\+Num}}
+\index{Set\+Ballot\+Num@{Set\+Ballot\+Num}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Set\+Ballot\+Num()}{SetBallotNum()}}
+{\footnotesize\ttfamily void Candidate\+::\+Set\+Ballot\+Num (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+set the number of ballot to count the ballot number 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a7007f43ce1b34fa18e382708b65b3505}\label{classCandidate_a7007f43ce1b34fa18e382708b65b3505}} 
+\index{Candidate@{Candidate}!Set\+Order\+Priority\+Party@{Set\+Order\+Priority\+Party}}
+\index{Set\+Order\+Priority\+Party@{Set\+Order\+Priority\+Party}!Candidate@{Candidate}}
+\subsubsection{\texorpdfstring{Set\+Order\+Priority\+Party()}{SetOrderPriorityParty()}}
+{\footnotesize\ttfamily void Candidate\+::\+Set\+Order\+Priority\+Party (\begin{DoxyParamCaption}\item[{int}]{order\+\_\+priority\+\_\+party }\end{DoxyParamCaption})}
+
+
+
+set the order of priority party for Closed \hyperlink{classParty}{Party} List 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/candidate.\+h\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/candidate.\+cc\end{DoxyCompactItemize}

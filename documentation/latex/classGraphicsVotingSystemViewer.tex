@@ -1,0 +1,216 @@
+\hypertarget{classGraphicsVotingSystemViewer}{}\section{Graphics\+Voting\+System\+Viewer Class Reference}
+\label{classGraphicsVotingSystemViewer}\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+
+
+An application that uses the Min\+Gfx library to open up a window that includes a few buttons for controlling the simulation and can be used to draw circles and other computer graphics.  
+
+
+
+
+{\ttfamily \#include $<$graphics\+\_\+voting\+\_\+system\+\_\+viewer.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Voting\+System\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classGraphicsVotingSystemViewer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Graphics\+Voting\+System\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classGraphicsVotingSystemViewer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraphicsVotingSystemViewer_a1664de5d9143fe92cdd4eaa483ca7a6d}{Graphics\+Voting\+System\+Viewer} (\hyperlink{classVotingSystem}{Voting\+System} $\ast$voting\+\_\+system, \hyperlink{classController}{Controller} $\ast$controller)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGraphicsVotingSystemViewer_a6a47acef4e0c072857b8487146766a11}{$\sim$\+Graphics\+Voting\+System\+Viewer} () override
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_a13ebb27a0162188b69b1bd01d29e45d5}{Update\+Simulation} (double dt) override
+\begin{DoxyCompactList}\small\item\em Informs the Arena of the new time, so that it can update. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_a457e7a3289e9dc9398d6b2e70e3ab009}{On\+Open\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Open button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_abfe9cdae267e421f59b05e2e1c076778}{On\+Export\+Audit\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Export Audit button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_aeeb0a10bc206355565d3e26fbbf16b20}{On\+Restart\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Reset button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_a75249f28efd57cb648ace4a09b465324}{On\+Audit\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Audit button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_a6f132616969b7fe7ba844e9569912074}{On\+Export\+Sharing\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Export Sharing button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_ae700ed298fe5037131a85e73af208938}{On\+Exit\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the Exit button on the G\+UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a1ef188a4b9d5799967aa10cb8111dbb7}\label{classGraphicsVotingSystemViewer_a1ef188a4b9d5799967aa10cb8111dbb7}} 
+void \hyperlink{classGraphicsVotingSystemViewer_a1ef188a4b9d5799967aa10cb8111dbb7}{Update\+Status} ()
+\begin{DoxyCompactList}\small\item\em Auto check status from \hyperlink{classVotingSystem}{Voting\+System} every timestep then display in corresponding textbox. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsVotingSystemViewer_a01dee1a5993bbbfe5e0fa67f0572557f}{Draw\+Using\+Nano\+VG} (N\+V\+Gcontext $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the \hyperlink{classVotingSystem}{Voting\+System} with all of its entities using {\ttfamily nanogui}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a511c1480b1525cf930eedcf463567935}\label{classGraphicsVotingSystemViewer_a511c1480b1525cf930eedcf463567935}} 
+void \hyperlink{classGraphicsVotingSystemViewer_a511c1480b1525cf930eedcf463567935}{Draw\+Using\+Open\+GL} () override
+\begin{DoxyCompactList}\small\item\em Draw using {\ttfamily Open\+GL}. This method is unimplemented, as currently we are doing all drawing with {\ttfamily nanovg} in this application, so it is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_ad21821b978498c3505a86daf95b89471}\label{classGraphicsVotingSystemViewer_ad21821b978498c3505a86daf95b89471}} 
+\hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer} \& \hyperlink{classGraphicsVotingSystemViewer_ad21821b978498c3505a86daf95b89471}{operator=} (const \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer} \&other)=delete
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the assignment operator is not defined. This {\ttfamily deletes} the default assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a92eb741397d9d9d3e7ce2c0c66c8608e}\label{classGraphicsVotingSystemViewer_a92eb741397d9d9d3e7ce2c0c66c8608e}} 
+\hyperlink{classGraphicsVotingSystemViewer_a92eb741397d9d9d3e7ce2c0c66c8608e}{Graphics\+Voting\+System\+Viewer} (const \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer} \&other)=delete
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the copy constructor is not defined. This {\ttfamily deletes} the default copy constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An application that uses the Min\+Gfx library to open up a window that includes a few buttons for controlling the simulation and can be used to draw circles and other computer graphics. 
+
+After constructing a new \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer}, call Run to start and run the application. Run will not return until the application window is closed. Example\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{
+    RobotViewer *app = \textcolor{keyword}{new} RobotViewer();
+    app->Run();
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+While the window is open Update\+Simulation will be called repeatedly, once per frame. Fill this in to update your simulation or perform any other processing that should happen over time as the simulation progresses.
+
+Fill in the {\ttfamily On$\ast$()} methods as desired to respond to user input events.
+
+Fill in the {\ttfamily Draw$\ast$()} methods to draw graphics on the screen using either the {\ttfamily nanovg} library or raw {\ttfamily Open\+GL}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a1664de5d9143fe92cdd4eaa483ca7a6d}\label{classGraphicsVotingSystemViewer_a1664de5d9143fe92cdd4eaa483ca7a6d}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{Graphics\+Voting\+System\+Viewer()}{GraphicsVotingSystemViewer()}}
+{\footnotesize\ttfamily Graphics\+Voting\+System\+Viewer\+::\+Graphics\+Voting\+System\+Viewer (\begin{DoxyParamCaption}\item[{\hyperlink{classVotingSystem}{Voting\+System} $\ast$}]{voting\+\_\+system,  }\item[{\hyperlink{classController}{Controller} $\ast$}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & A arena\+\_\+params passed down from \hyperlink{main_8cc}{main.\+cc} for the initialization of the Arena and the entities therein. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a6a47acef4e0c072857b8487146766a11}\label{classGraphicsVotingSystemViewer_a6a47acef4e0c072857b8487146766a11}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!````~Graphics\+Voting\+System\+Viewer@{$\sim$\+Graphics\+Voting\+System\+Viewer}}
+\index{````~Graphics\+Voting\+System\+Viewer@{$\sim$\+Graphics\+Voting\+System\+Viewer}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{$\sim$\+Graphics\+Voting\+System\+Viewer()}{~GraphicsVotingSystemViewer()}}
+{\footnotesize\ttfamily Graphics\+Voting\+System\+Viewer\+::$\sim$\+Graphics\+Voting\+System\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Destructor. 
+
+{\ttfamily delete} the contained Arena. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a01dee1a5993bbbfe5e0fa67f0572557f}\label{classGraphicsVotingSystemViewer_a01dee1a5993bbbfe5e0fa67f0572557f}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!Draw\+Using\+Nano\+VG@{Draw\+Using\+Nano\+VG}}
+\index{Draw\+Using\+Nano\+VG@{Draw\+Using\+Nano\+VG}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{Draw\+Using\+Nano\+V\+G()}{DrawUsingNanoVG()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+Draw\+Using\+Nano\+VG (\begin{DoxyParamCaption}\item[{N\+V\+Gcontext $\ast$}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Draw the \hyperlink{classVotingSystem}{Voting\+System} with all of its entities using {\ttfamily nanogui}. 
+
+This is the primary driver for drawing all entities in the \hyperlink{classVotingSystem}{Voting\+System}. It is called at each iteration of {\ttfamily nanogui\+::mainloop()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ctx} & Context for nanogui. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphicsVotingSystemViewer_a75249f28efd57cb648ace4a09b465324}\label{classGraphicsVotingSystemViewer_a75249f28efd57cb648ace4a09b465324}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Audit\+Btn\+Pressed@{On\+Audit\+Btn\+Pressed}}
+\index{On\+Audit\+Btn\+Pressed@{On\+Audit\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Audit\+Btn\+Pressed()}{OnAuditBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Audit\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Audit button on the G\+UI. 
+
+This will run the whole audit process base on the user input \mbox{\Hypertarget{classGraphicsVotingSystemViewer_ae700ed298fe5037131a85e73af208938}\label{classGraphicsVotingSystemViewer_ae700ed298fe5037131a85e73af208938}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Exit\+Btn\+Pressed@{On\+Exit\+Btn\+Pressed}}
+\index{On\+Exit\+Btn\+Pressed@{On\+Exit\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Exit\+Btn\+Pressed()}{OnExitBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Exit\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Exit button on the G\+UI. 
+
+This will close the graphics, exit the program \mbox{\Hypertarget{classGraphicsVotingSystemViewer_abfe9cdae267e421f59b05e2e1c076778}\label{classGraphicsVotingSystemViewer_abfe9cdae267e421f59b05e2e1c076778}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Export\+Audit\+Btn\+Pressed@{On\+Export\+Audit\+Btn\+Pressed}}
+\index{On\+Export\+Audit\+Btn\+Pressed@{On\+Export\+Audit\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Export\+Audit\+Btn\+Pressed()}{OnExportAuditBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Export\+Audit\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Export Audit button on the G\+UI. 
+
+This will export audit file to a location user selected. Req\+: Select before running audit \mbox{\Hypertarget{classGraphicsVotingSystemViewer_a6f132616969b7fe7ba844e9569912074}\label{classGraphicsVotingSystemViewer_a6f132616969b7fe7ba844e9569912074}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Export\+Sharing\+Btn\+Pressed@{On\+Export\+Sharing\+Btn\+Pressed}}
+\index{On\+Export\+Sharing\+Btn\+Pressed@{On\+Export\+Sharing\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Export\+Sharing\+Btn\+Pressed()}{OnExportSharingBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Export\+Sharing\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Export Sharing button on the G\+UI. 
+
+This will export Sharing file to a location user selected. Req\+: Select before running audit \mbox{\Hypertarget{classGraphicsVotingSystemViewer_a457e7a3289e9dc9398d6b2e70e3ab009}\label{classGraphicsVotingSystemViewer_a457e7a3289e9dc9398d6b2e70e3ab009}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Open\+Btn\+Pressed@{On\+Open\+Btn\+Pressed}}
+\index{On\+Open\+Btn\+Pressed@{On\+Open\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Open\+Btn\+Pressed()}{OnOpenBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Open\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Open button on the G\+UI. 
+
+This will prompt the user to select/search for an input file \mbox{\Hypertarget{classGraphicsVotingSystemViewer_aeeb0a10bc206355565d3e26fbbf16b20}\label{classGraphicsVotingSystemViewer_aeeb0a10bc206355565d3e26fbbf16b20}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!On\+Restart\+Btn\+Pressed@{On\+Restart\+Btn\+Pressed}}
+\index{On\+Restart\+Btn\+Pressed@{On\+Restart\+Btn\+Pressed}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{On\+Restart\+Btn\+Pressed()}{OnRestartBtnPressed()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+On\+Restart\+Btn\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the user pressing the Reset button on the G\+UI. 
+
+This will reset the graphics \mbox{\Hypertarget{classGraphicsVotingSystemViewer_a13ebb27a0162188b69b1bd01d29e45d5}\label{classGraphicsVotingSystemViewer_a13ebb27a0162188b69b1bd01d29e45d5}} 
+\index{Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}!Update\+Simulation@{Update\+Simulation}}
+\index{Update\+Simulation@{Update\+Simulation}!Graphics\+Voting\+System\+Viewer@{Graphics\+Voting\+System\+Viewer}}
+\subsubsection{\texorpdfstring{Update\+Simulation()}{UpdateSimulation()}}
+{\footnotesize\ttfamily void Graphics\+Voting\+System\+Viewer\+::\+Update\+Simulation (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Informs the Arena of the new time, so that it can update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The new timestep. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/graphics\+\_\+voting\+\_\+system\+\_\+viewer.\+h\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/graphics\+\_\+voting\+\_\+system\+\_\+viewer.\+cc\end{DoxyCompactItemize}

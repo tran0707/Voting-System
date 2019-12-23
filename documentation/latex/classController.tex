@@ -1,0 +1,61 @@
+\hypertarget{classController}{}\section{Controller Class Reference}
+\label{classController}\index{Controller@{Controller}}
+
+
+\hyperlink{classController}{Controller} that mediates Arena and \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer} communication.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classController_a95c56822d667e94b031451729ce069a9}\label{classController_a95c56822d667e94b031451729ce069a9}} 
+\hyperlink{classController_a95c56822d667e94b031451729ce069a9}{Controller} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classController}{Controller}\textquotesingle{}s constructor that will create Arena and Viewer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a17abb2cec6c0109e9b2df3cdc082eaad}\label{classController_a17abb2cec6c0109e9b2df3cdc082eaad}} 
+void \hyperlink{classController_a17abb2cec6c0109e9b2df3cdc082eaad}{Run} ()
+\begin{DoxyCompactList}\small\item\em Run launches the graphics and starts the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a6a4a3eaee03f6c4718da3f8293d7e053}\label{classController_a6a4a3eaee03f6c4718da3f8293d7e053}} 
+void \hyperlink{classController_a6a4a3eaee03f6c4718da3f8293d7e053}{Advance\+Time} (double dt)
+\begin{DoxyCompactList}\small\item\em Advance\+Time is communication from the Viewer to advance the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a55b8d46984535adb91f40309914e8852}\label{classController_a55b8d46984535adb91f40309914e8852}} 
+void \hyperlink{classController_a55b8d46984535adb91f40309914e8852}{Accept\+Communication} (Communication com)
+\begin{DoxyCompactList}\small\item\em Accept\+Communication from either the viewer or the Arena. \end{DoxyCompactList}\item 
+Communication \hyperlink{classController_ae9b0504ab74cdacc654528b609074adc}{Convert\+Comm} (Communication com)
+\begin{DoxyCompactList}\small\item\em Converts the communication from one to send to the other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classController}{Controller} that mediates Arena and \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer} communication. 
+
+The \hyperlink{classController}{Controller} instantiates the Arena and the \hyperlink{classGraphicsVotingSystemViewer}{Graphics\+Voting\+System\+Viewer}. The viewer contains the main loop that keeps it live, but at each update, the viewer sends a message to the controller to update its time.
+
+Other types of communication between Arena and Viewer include\+:
+\begin{DoxyItemize}
+\item keypresses intercepted by the Viewer.
+\item Play/\+Pause/\+New Game user input via the Viewer.
+\item Game status from arena to the viewer. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classController_ae9b0504ab74cdacc654528b609074adc}\label{classController_ae9b0504ab74cdacc654528b609074adc}} 
+\index{Controller@{Controller}!Convert\+Comm@{Convert\+Comm}}
+\index{Convert\+Comm@{Convert\+Comm}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{Convert\+Comm()}{ConvertComm()}}
+{\footnotesize\ttfamily Communication Controller\+::\+Convert\+Comm (\begin{DoxyParamCaption}\item[{Communication}]{com }\end{DoxyParamCaption})}
+
+
+
+Converts the communication from one to send to the other. 
+
+Used primarily for testing purposes to insure communication is being correctly received, interpreted, and relayed.
+
+Converts communication from one source to appropriate communication to the other source. For example, the viewer sends a b\+Button\+Audit communication, and this translate to a k\+Audit communication to \hyperlink{classVotingSystem}{Voting\+System}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{controller_8h}{controller.\+h}\item 
+/home/sin00001/csci5801\+Project/repo-\/\+Team22/\+Project2/src/\hyperlink{controller_8cc}{controller.\+cc}\end{DoxyCompactItemize}
