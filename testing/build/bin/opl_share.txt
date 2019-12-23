@@ -1,0 +1,23 @@
+====================================================================================================================
+Voting Type: OPL
+Number of Total Candidates: 4
+Number of Total Seats: 2
+Number of Ballots: 10
+Party D has candidates: Davis, Victor, 
+Party R has candidates: Frank, Janifer.
+Ballot ID List: 1 2 3 4 5 6 7 8 9 10 
+
+OPL ALL CANDIDATES:
+-------------------
+Candidate Name     Party Name          Ballot IDs          Number of Vote      % Votes             % Seats             
+Davis              D                   1, 2                2                   20                  50                  
+Victor             D                   3, 4, 5             3                   30                  50                  
+Frank              R                   6, 7, 8, 9          4                   40                  50                  
+Janifer            R                   10                  1                   10                  50                  
+
+WINNER CANDIDATES:
+-----------------
+Candidate Name     Party Name          Ballot IDs          Number of Vote      % Votes             % Seats             
+Victor             D                   3, 4, 5             3                   30                  50                  
+Frank              R                   6, 7, 8, 9          4                   40                  50                  
+====================================================================================================================
